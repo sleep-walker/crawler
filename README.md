@@ -15,21 +15,21 @@ crawler can do 3 basic actions
 
 ## Usage
 
-$ crawler.py --help
-Usage: crawler.py [OPTIONS] [URL]...
-
-Options:
-  --version                    Show the version and exit.
-  -n, --next TEXT              XPath pointing to URL to follow while it
-                               matches
-  -p, --print TEXT             XPath pointing to region which should be
-                               printed to screen
-  -a, --action <TEXT TEXT>...  XPath (first parameter) pointing to region
-                               which should be passed to a command (second
-                               parameter). Use '{}' to indicate positions,
-                               wher it should be replaced.
-  -s, --silent                 do not print any output
-  --help                       Show this message and exit.
+    $ crawler.py --help
+    Usage: crawler.py [OPTIONS] [URL]...
+    
+    Options:
+      --version                    Show the version and exit.
+      -n, --next TEXT              XPath pointing to URL to follow while it
+                                   matches
+      -p, --print TEXT             XPath pointing to region which should be
+                                   printed to screen
+      -a, --action <TEXT TEXT>...  XPath (first parameter) pointing to region
+                                   which should be passed to a command (second
+                                   parameter). Use '{}' to indicate positions,
+                                   wher it should be replaced.
+      -s, --silent                 do not print any output
+      --help                       Show this message and exit.
 
 Any of options can be repeated.
 
