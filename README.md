@@ -10,7 +10,7 @@ Sometimes you want to print all links on page. Sometimes you need to click on ma
 crawler can do 3 basic actions
 
 * print result of XPath matching on page
-* obtain part maching XPath from page and pass it as an argument to command (replace each occurence of '{}')
+* obtain part maching XPath from page and pass it as an argument to command (replace each occurence of `{}` similarly as find's exec works)
 * follow to next URL (represented as XPath) - as long as XPath is matching, crawler continues to visit pages
 
 ## Usage
@@ -60,6 +60,13 @@ In following example it walk all 25 pages with episode of anime by walking the '
 		         'megadl {}' \
 		http://shirai.cz/preklad-zobraz/11987/re-zero-kara-hajimeru-isekai-seikatsu/1/
     Re: Zero Kara Hajimeru Isekai Seikatsu - 01A.mp4: 2% - 4,4 MiB of 152,4 MiB
+
+
+## TODO
+
+* make module from that and publish it to pip
+* internally provide also list of collected elements (which could be
+  processed later)
 
 ## License
 Published under [GPL 3.0 license](https://opensource.org/licenses/GPL-3.0).
